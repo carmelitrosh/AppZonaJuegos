@@ -1,5 +1,6 @@
 package mx.edu.utng.apppass.activities
 
+import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,8 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
+import kotlinx.android.synthetic.main.activity_users_list.*
+import mx.edu.utng.apppass.InicioActivity
 
 import mx.edu.utng.apppass.R
 import mx.edu.utng.apppass.adapters.UsersRecyclerAdapter
@@ -29,6 +32,11 @@ class UsersListActivity : AppCompatActivity() {
         supportActionBar!!.title = ""
         initViews()
         initObjects()
+
+        btnContinuar.setOnClickListener{
+            val intent:Intent = Intent(this, InicioActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

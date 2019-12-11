@@ -1,4 +1,4 @@
-package mx.edu.utng.zonajuegos
+package mx.edu.utng.apppass
 
 import org.junit.Test
 

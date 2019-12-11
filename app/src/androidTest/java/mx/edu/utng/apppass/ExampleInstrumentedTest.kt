@@ -1,4 +1,4 @@
-package mx.edu.utng.zonajuegos
+package mx.edu.utng.apppass
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
